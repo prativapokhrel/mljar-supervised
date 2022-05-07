@@ -49,7 +49,7 @@ class LeaderboardPlots:
         plt.figure(figsize=(10, 7))
         # plt.title("")
         plt.ylabel(ldb.metric_type.iloc[0])
-        df2[mins.index].boxplot(rot=90, fontsize=12)
+        df2[mins.index].boxplot(rot=90, fontsize=18)
 
         plt.tight_layout(pad=2.0)
         plot_path = os.path.join(model_path, LeaderboardPlots.performance_boxplot_fname)
